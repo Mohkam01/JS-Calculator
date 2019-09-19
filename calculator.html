@@ -1,0 +1,122 @@
+<head>
+  <link
+    rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+    crossorigin="anonymous"
+  />
+  <link rel="stylesheet" href="hello.css" />
+  <title>Calculator</title>
+</head>
+<body>
+  <!-- <button onclick="myfunction()">
+      click me
+    </button>
+    <button onclick="yourfunction()">
+      hit me
+    </button>
+    <p id="testing">5 + 6</p>
+    <p id="demo"></p> -->
+  <div class="container main-screen">
+    <div class="screen">
+      <h3 id="screen"></h3>
+    </div>
+    <br />
+    <div class="no-outline">
+      <button
+        class="btn btn-secondary cal-btn upper-btn btn-ac"
+        onclick="remove()"
+      >
+        AC
+      </button>
+      <button
+        class="btn btn-secondary cal-btn upper-btn btn-minus"
+        onclick="sign()"
+      >
+        +/-
+      </button>
+      <button class="btn btn-secondary upper-btn cal-btn" onclick="opt('%')">
+        %
+      </button>
+      <button
+        id="case1"
+        class="btn btn-secondary upper-btn cal-btn clr"
+        onclick="opt('/'); changeColor(this,'case2','case3','case4')"
+      >
+        /
+      </button>
+    </div>
+    <div class="no-outline">
+      <button class="btn btn-secondary cal-btn clr2" onclick="set(7)">7</button>
+      <button class="btn btn-secondary cal-btn clr2" onclick="set(8)">8</button>
+      <button class="btn btn-secondary cal-btn clr2" onclick="set(9)">9</button>
+      <button
+        id="case2"
+        class="btn btn-secondary cal-btn clr "
+        onclick="opt('*'); changeColor(this,'case1','case3','case4')"
+      >
+        x
+      </button>
+    </div>
+    <div class="no-outline">
+      <button class="btn btn-secondary cal-btn clr2" onclick="set(4)">4</button>
+      <button class="btn btn-secondary cal-btn clr2" onclick="set(5)">5</button>
+      <button class="btn btn-secondary cal-btn clr2" onclick="set(6)">6</button>
+      <button
+        id="case3"
+        class="btn btn-secondary cal-btn clr"
+        onclick="opt('-'); changeColor(this,'case2','case1','case4')"
+      >
+        -
+      </button>
+    </div>
+
+    <div class="no-outline">
+      <button class="btn btn-secondary cal-btn clr2" onclick="set(1)">1</button>
+      <button class="btn btn-secondary cal-btn clr2" onclick="set(2)">2</button>
+      <button class="btn btn-secondary cal-btn clr2" onclick="set(3)">
+        3
+      </button>
+      <button
+        id="case4"
+        class="btn btn-secondary cal-btn clr"
+        onclick="opt('+'); changeColor(this,'case2','case3','case1')"
+      >
+        +
+      </button>
+    </div>
+    <div class="no-outline">
+      <button class="btn btn-secondary cal-btn clr2" onclick="storage()">
+        M
+      </button>
+      <button class="btn btn-secondary cal-btn clr2" onclick="set(0)">
+        0
+      </button>
+      <button class="btn btn-secondary cal-btn clr2" onclick="dot()">
+        .
+      </button>
+      <button
+        id="case5"
+        class="btn btn-secondary cal-btn clr"
+        onclick="calculate()"
+      >
+        =
+      </button>
+      <!-- <button class="btn btn-secondary cal-btn clr" onclick="opt('*')">
+        *
+      </button> -->
+    </div>
+  </div>
+</body>
+<script src="js/testing.js">
+  // var button = document.querySelector('.coloring');
+  // button.onclick = function () {
+
+
+  //  this.style.backgroundColor = "black";
+  // };
+    //   function set() {
+    //     document.getElementById("demo").innerHTML = "hello u clicked";
+    //   }
+</script>
+<!-- <script src="js/test2.js"></script> -->
